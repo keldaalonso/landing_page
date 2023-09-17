@@ -1,3 +1,6 @@
+body{
+    font-family: 'Lato';
+}
 .container {
     background-color: skyblue;
     display: flex; /* Add flex display to the container */
@@ -25,7 +28,7 @@ img{
 
 #sidemenu {
     list-style-type: none;
-    padding-left: 700px;
+    padding-left: 600px;
     padding-bottom: 30px;
     padding-bottom: -70px;
     display: flex; /* Add flex display to the list */
@@ -50,14 +53,14 @@ ul{
     position: absolute;
     top: -20px; /* Adjust the top position to partially overlap the container */
     left: 0;
-    width: 250px;
+    width: 350px;
     margin-top: -100px;
     padding-left: 180px;
     margin-left: 1200px;
     height: 300px;
     background-color: #30A8E0;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
     z-index: 1; /* Bring the shape to the front */
     transform: rotate(180deg); /* Rotate the shape by 180 degrees */
 }
@@ -90,7 +93,7 @@ ul{
 .need{
     padding-top: 20px;
     font-size: 42px;
-    margin-left: 30PX;
+    margin-left: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: #3D69B2;
     font-weight: bold;
@@ -102,4 +105,44 @@ ul{
     font-family: Arial, Helvetica, sans-serif;
     color: #3D69B2;
     font-weight: bold;
+}
+.health{
+    font-size: 25px;
+    padding-top: 50px;
+    line-height: 65px;
+    margin-left: 160px;
+}
+.course{
+    font-weight: bold;
+}
+button{
+    background-color: #566AB0;
+    padding-top: -10px;
+    color: white; /* Set the text color to white */
+    border-radius: 10px;/* Remove the default button border */
+    font-size: 18px; /* Set the font size of the text */
+    margin-left: 160px;
+    text-align: center; /* Center-align the text */
+    text-decoration: white;/* Remove underlines from links (if it's a link styled as a button) */
+    cursor: pointer; /* Change the cursor to a pointer on hover (optional) */
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+.button{
+    padding-top: 30px;
+}
+.lady{
+    margin-left: 800px;
+    
+}
+img.nurse-lady{
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    bottom: -10px;
+    
+}
+img{
+    background-color: inherit;
 }
