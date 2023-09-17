@@ -12,6 +12,33 @@ body{
 #header{
     align-items: flex-start;
 }
+.nav-item {
+    display: inline-block;
+    margin-right: 20px; /* Add spacing between items */
+    position: relative; /* Set position relative for positioning the line */
+}
+/* Style the line beneath the items */
+.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Height of the line */
+    background-color: transparent; /* Initially transparent */
+    transition: background-color 0.3s; /* Transition effect for background color */
+}
+
+/* Change the line color on hover */
+.nav-item:hover::after {
+    background-color: yellow; /* Yellow line on hover */
+}
+
+/* Style the line for the current item */
+.nav-item.current::after {
+    background-color: yellow; /* Yellow line for the current item */
+}
+
 
 .topnav-left {
     display: inline-flex; /* Use flex to align the logo and menu on the same line */
@@ -28,8 +55,7 @@ img{
 
 #sidemenu {
     list-style-type: none;
-    padding-left: 600px;
-    padding-bottom: 30px;
+    padding-left: 550px;
     padding-bottom: -70px;
     display: flex; /* Add flex display to the list */
     gap: 35px; /* Add some spacing between list items */
@@ -43,11 +69,18 @@ ul{
 }
 #sidemenu li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 #sidemenu li:first-child {
     margin-right: 10px; /* Add spacing to the right of the first li */
+}
+#sidemenu li:nth-child(5) {
+    margin-right: 80px; /* Add spacing to the right of the first li */
+}
+/* Change the color of the third <li> element */
+ul li:nth-child(3) {
+    color: red; /* Change the color to red */
 }
 #colored-shape {
     position: absolute;
@@ -56,7 +89,7 @@ ul{
     width: 350px;
     margin-top: -100px;
     padding-left: 180px;
-    margin-left: 1200px;
+    margin-left: 1150px;
     height: 300px;
     background-color: #30A8E0;
     border-top-left-radius: 250px;
@@ -64,24 +97,35 @@ ul{
     z-index: 1; /* Bring the shape to the front */
     transform: rotate(180deg); /* Rotate the shape by 180 degrees */
 }
-
-#sidemenu li {
-    margin: 0;
-    padding: 0;
-}
-
 #sidemenu li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
+.hover-effect a {
+    color: white;
+}
+/* Style for the hover effect */
+li.hover-effect a {
+    position: relative;
+    color: #fff; /* Initial font color */
+    transition: background-color 0.3s, color 0.3s; /* Transition effect for background and font color */
+}
+
+.hover-effect a:hover {
+    background-color: white; /* Background color on hover */
+    color: yellow; /* Font color on hover */
+}
+
+.hover-effect a:hover::before {
+    opacity: 1; /* Show the yellow background on hover */
+}
 
 .fa-solid fa-gear {
     cursor: pointer;
-    margin-left: 10px;
-    position: absolute; /* Add absolute positioning */
+    margin-left: 20px;
     top: 10px; /* Adjust the top position as needed */
-    left: 10px; /* Adjust the left position as needed */
+    left: 30px; /* Adjust the left position as needed */
 }
 .help-online {
     margin-left: 160px;
@@ -109,13 +153,13 @@ ul{
 .health{
     font-size: 25px;
     padding-top: 50px;
-    line-height: 65px;
+    line-height: 55px;
     margin-left: 160px;
 }
 .course{
     font-weight: bold;
 }
-button{
+button.btn1{
     background-color: #566AB0;
     padding-top: -10px;
     color: white; /* Set the text color to white */
@@ -133,16 +177,17 @@ button{
     padding-top: 30px;
 }
 .lady{
-    margin-left: 800px;
+    margin-left: 750px;
+    position: relative;
     
 }
 img.nurse-lady{
     position: absolute;
-    width: 400px;
-    height: 600px;
-    bottom: -10px;
-    
+    width: 450px;
+    height: 650px; 
+    bottom: -110px; 
 }
-img{
-    background-color: inherit;
+.lady{
+    margin-bottom: 100px;
 }
+
