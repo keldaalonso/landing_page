@@ -1,0 +1,105 @@
+.container {
+    background-color: skyblue;
+    display: flex; /* Add flex display to the container */
+    justify-content: space-between; /* Distribute the space between items */
+    align-items: center; /* Vertically align items in the center */
+    padding: 10px; /* Add some padding for spacing */
+    position: relative;
+}
+#header{
+    align-items: flex-start;
+}
+
+.topnav-left {
+    display: inline-flex; /* Use flex to align the logo and menu on the same line */
+    align-items: center; /* Center items vertically */
+    padding-left: 170px;
+    margin-top: 30px;
+    
+    
+}
+img{
+    width: 140px;
+    height: 90px;
+}
+
+#sidemenu {
+    list-style-type: none;
+    padding-left: 700px;
+    padding-bottom: 30px;
+    padding-bottom: -70px;
+    display: flex; /* Add flex display to the list */
+    gap: 35px; /* Add some spacing between list items */
+    margin-top: -55px;
+    position: relative; /* Add relative positioning */
+    z-index: 2; /* Place the menu on top of the blue box */
+}
+ul{
+    padding-bottom: 80px;
+    margin-top: -55px;
+}
+#sidemenu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#sidemenu li:first-child {
+    margin-right: 10px; /* Add spacing to the right of the first li */
+}
+#colored-shape {
+    position: absolute;
+    top: -20px; /* Adjust the top position to partially overlap the container */
+    left: 0;
+    width: 250px;
+    margin-top: -100px;
+    padding-left: 180px;
+    margin-left: 1200px;
+    height: 300px;
+    background-color: #30A8E0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 1; /* Bring the shape to the front */
+    transform: rotate(180deg); /* Rotate the shape by 180 degrees */
+}
+
+#sidemenu li {
+    margin: 0;
+    padding: 0;
+}
+
+#sidemenu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.fa-solid fa-gear {
+    cursor: pointer;
+    margin-left: 10px;
+    position: absolute; /* Add absolute positioning */
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the left position as needed */
+}
+.help-online {
+    margin-left: 160px;
+    background-color: white;
+    width: 600px;
+    height: 120px;
+    border-radius: 15px;
+}
+.need{
+    padding-top: 20px;
+    font-size: 42px;
+    margin-left: 30PX;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3D69B2;
+    font-weight: bold;
+}
+.nurse{
+    margin-top: -60px;
+    margin-left: 100PX;
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3D69B2;
+    font-weight: bold;
+}
