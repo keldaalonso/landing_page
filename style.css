@@ -40,6 +40,29 @@ body{
     background-color: #FAB51C; /* Yellow line for the current item */
     height: 4px;
 }
+.btn-login, .btn-register{
+    background: none; /* Remove the default background */
+    border: none; /* Remove the default border */
+    cursor: pointer;
+    color: white; /* Use the inherited text color */
+    padding: 0; /* Remove padding to make the text look like normal text */
+    font-size: inherit; /* Use the inherited font size */
+    text-decoration: none;
+    font-weight: bold; /* Add underline to make it look like a link */
+    outline: none; /* Remove the focus outline */
+    transition: color 0.3s; /* Transition effect for text color */
+}
+/* Style for the buttons when clicked (active state) */
+
+/* Style for the buttons when clicked (active state) */
+.btn-login.btn-active,
+.btn-register.btn-active {
+    background-color: white; /* Add background color when clicked */
+    color: #FAB51C; /* Change text color to white when clicked */
+    padding: 6px 16px; /* Add padding for button appearance */
+    border-radius: 10px; /* Add rounded corners */
+    text-decoration: none; /* Remove underline */
+}
 
 .topnav-left {
     display: inline-flex; /* Use flex to align the logo and menu on the same line */
@@ -56,7 +79,7 @@ img{
 
 #sidemenu {
     list-style-type: none;
-    padding-left: 550px;
+    padding-left: 475px;
     padding-bottom: -70px;
     display: flex; /* Add flex display to the list */
     gap: 35px; /* Add some spacing between list items */
@@ -74,10 +97,11 @@ ul{
     font-weight: bold;
 }
 #sidemenu li:first-child {
-    margin-right: 10px; /* Add spacing to the right of the first li */
+    margin-right: 1px; /* Add spacing to the right of the first li */
 }
 #sidemenu li:nth-child(5) {
-    margin-right: 80px; /* Add spacing to the right of the first li */
+    margin-right: 120px; /* Add spacing to the right of the first li */
+
 }
 /* Change the color of the third <li> element */
 ul li:nth-child(3) {
@@ -89,7 +113,7 @@ ul li:nth-child(3) {
     left: 0;
     width: 350px;
     margin-top: -100px;
-    padding-left: 180px;
+    padding-left: 160px;
     margin-left: 1150px;
     height: 300px;
     background-color: #30A8E0;
@@ -122,11 +146,9 @@ li.hover-effect a {
     opacity: 1; /* Show the yellow background on hover */
 }
 
-.fa-solid fa-gear {
-    cursor: pointer;
-    margin-left: 20px;
-    top: 10px; /* Adjust the top position as needed */
-    left: 30px; /* Adjust the left position as needed */
+.fa-sharp.fa-solid.fa-gear {
+    color: white; /* Set the color to white */
+    font-size: 24px; /* Set the desired font size */
 }
 .help-online {
     margin-left: 160px;
