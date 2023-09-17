@@ -7,6 +7,7 @@
     <title>HCE Website</title>
     <link rel="stylesheet" href="style.css">
     <link type='text/css' href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c34d9c87cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,7 +15,7 @@
         <div class="container">
             <nav>
                 <div class="topnav-left">
-                    <img src="assets/images/icon.png" alt="" class="logo" width="150px" height="50px"></div>
+                    <img src="assets/images/hce.png" alt="" class="logo" width="150px" height="50px"></div>
 
                     <ul id="sidemenu">
                         <li class="nav-item"><a href="#header">HOME PAGE</a></li>
@@ -30,7 +31,7 @@
 
                     <div class="help-online">
                         <p class="need">Need help with your online</p><br>
-                        <p class="nurse"> nursing classes ?</p>
+                        <p class="nurse"> nursing class ?</p>
                     </div>
 
                 <div class="health">
@@ -44,11 +45,42 @@
                 <div class="lady">
                     <img src="assets/images/nurse.png" class="nurse-lady" width="150px" height="50px">
                 </div>
+                <div id="colored-shape"></div>
+                <div id="registration-container" class="hidden">
+                    <div id="registration-form" class="hidden">
+                        <img src="assets/images/hce.png" class="hce">
+                        <form>
+                            <!-- Your registration form fields go here -->
+                            <input type="text" id="username" name="username" placeholder="Full Name" required><br>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <input type="email" id="email" name="email" placeholder="Phone" required>
+                            <div class="custom-dropdown">
+                                <div class="dropdown-placeholder">
+                                  <input type="text" id="course" name="course" readonly placeholder="Select Course">
+                                  <i class="fas fa-chevron-down dropdown-arrow"></i>
+                                </div>
+                                <ul class="dropdown-content">
+                                  <li>Select Course 1</li>
+                                  <li>Select Course 2</li>
+                                  <li>Select Course 3</li>
+                                  <!-- Add more options as needed -->
+                                </ul>
+                              </div>
+                              
+                            <!-- Add more form fields as needed -->
+                            
+                            <button class="submit">
+                                <ion-icon name="paper-plane"></ion-icon> Submit 
+                            </button>
+                            
+                        </form>
+                    </div>
+                </div>
+               
                 </div>
             </nav>
         </div>
-        <div id="colored-shape"></div>
-    </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
