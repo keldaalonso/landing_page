@@ -15,7 +15,7 @@ body{
     padding: 10px; /* Add some padding for spacing */
     position: relative;
 }
-#header{
+#home{
     align-items: flex-start;
 }
 .nav-item {
@@ -52,7 +52,7 @@ body{
     cursor: pointer;
     color: white; /* Use the inherited text color */
     padding: 0; /* Remove padding to make the text look like normal text */
-    font-size: inherit; /* Use the inherited font size */
+    font-size: 18px; /* Use the inherited font size */
     text-decoration: none;
     font-weight: bold; /* Add underline to make it look like a link */
     outline: none; /* Remove the focus outline */
@@ -83,7 +83,7 @@ img{
 
 #sidemenu {
     list-style-type: none;
-    padding-left: 475px;
+    padding-left: 400px;
     padding-bottom: -80px;
     display: flex; /* Add flex display to the list */
     gap: 35px; /* Add some spacing between list items */
@@ -96,6 +96,7 @@ ul{
     margin-top: -55px;
 }
 #sidemenu li a {
+    font-size: 18px;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -104,22 +105,22 @@ ul{
     margin-right: 1px; /* Add spacing to the right of the first li */
 }
 #sidemenu li:nth-child(5) {
-    margin-right: 120px; /* Add spacing to the right of the first li */
-
+    margin-right: 80px; /* Add spacing to the right of the first li */
+    
 }
 /* Change the color of the third <li> element */
 #colored-shape {
     position: absolute;
     top: -20px; /* Adjust the top position to partially overlap the container */
     left: 0;
-    width: 350px;
+    width: 550px;
     margin-top: -100px;
     padding-left: 160px;
-    margin-left: 1150px;
+    margin-left: 1050px;
     height: 330px;
     background-color: #30A8E0;
-    border-top-left-radius: 250px;
-    border-top-right-radius: 250px;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
     z-index: 1; /* Bring the shape to the front */
     transform: rotate(180deg); /* Rotate the shape by 180 degrees */
 }
@@ -128,7 +129,7 @@ ul{
     display: none;
     background-color: white; /* Add the white background color */
     padding: 52px; /* Add padding for spacing */
-    width: 250px;
+    width: 353px;
     height: 500px;
     position: absolute;
     top: 180px; /* Adjust the top position as needed */
@@ -141,15 +142,15 @@ ul{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: 290px;
+    bottom: 250px;
     left: 40px;
   }
   input[type="text"],
   input[type="email"] {
-  width: 80%;
-  height: 10px;
+  width: 86%;
+  height: 30px;
   padding: 10px;
-  margin-bottom: 15px; /* Add space between placeholders */
+  margin-bottom: 10px; /* Add space between placeholders */
   border: 0px solid #ccc; /* Border color */
   background-color: #f9f9f9; /* Background color */
   border-radius: 5px;
@@ -229,7 +230,7 @@ ul{
     width: 100px;
     height: 50px;
     right: 20px;
-    top: -50px;
+    top: -30px;
   }
   .submit{
     border: 2px solid #FFB600; /* Border width and color */
@@ -248,7 +249,7 @@ ul{
     bottom: -10px; /* Adjust the distance from the container */
     left: 0;
     width: 355px;
-    height: 130px; /* Adjust the height of the colored shape */
+    height: 100px; /* Adjust the height of the colored shape */
     background-color: #DDE3F7; /* Color of the shape */
     z-index: -1; /* Place it behind the container */
     border-radius: 100px 0 25px 25px; /* Rounded corner on the right side */
@@ -293,17 +294,18 @@ li.hover-effect a {
 }
 .need{
     margin-top: -5px;
-    font-size: 42px;
+    font-size: 38px;
     margin-left: 30px;
     font-family: 'Lato';
     color: #3D69B2;
     font-weight: bold;
+    width: 100%;
 }
 .nurse{
     margin-top: -60px;
     margin-left: 100PX;
     font-size: 42px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato';
     color: #3D69B2;
     font-weight: bold;
 }
@@ -340,10 +342,10 @@ button.btn1{
 }
 img.nurse-lady{
     position: absolute;
-    left: 40px;
+    left: 10px;
     width: 450px;
     height: 650px; 
-    bottom: -100px; 
+    bottom: -120px; 
 }
 .lady{
     margin-bottom: 100px;
