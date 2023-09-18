@@ -17,8 +17,6 @@ body{
     padding: 10px; /* Add some padding for spacing */
     position: relative;
 }
-
-
 #header{
     align-items: flex-start;
 }
