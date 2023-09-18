@@ -7,6 +7,8 @@
 body{
     font-family: 'Lato';
 }
+
+
 .container {
     background-color: #A9E4FF;
     display: flex; /* Add flex display to the container */
@@ -15,14 +17,20 @@ body{
     padding: 10px; /* Add some padding for spacing */
     position: relative;
 }
+
+
 #header{
     align-items: flex-start;
 }
+
+
 .nav-item {
     display: inline-block;
     margin-right: 20px; /* Add spacing between items */
     position: relative; /* Set position relative for positioning the line */
 }
+
+
 /* Style the line beneath the items */
 .nav-item::after {
     content: "";
@@ -480,4 +488,113 @@ img.nurse-lady{
 }
 .circle1{
     border-radius: 50px;
+}
+
+
+/* Statistics Section */
+
+#stats {
+    background-image: url("assets/images/bg2.jpg");
+    background-repeat: repeat;
+    padding: 7% 15%;
+    height: 450px;
+}
+
+.row-1, .row-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.stats-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    width: 500px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.stats-icon {
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 100%;
+}
+
+.stats-icon i {
+    font-size: 50px;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.stats-text p:first-child {
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.small {
+    color: grey;
+    font-size: 15px;
+}
+
+.row-2 .si-2 {
+    margin-right: 40px;
+}
+
+.row-1 .si-0 {
+    margin-left: 15px;
+}
+
+/* WHat we offer section */
+
+#offers {
+    background-image: space repeat;
+    padding: 7% 15%;
+}
+
+.offers-container {
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.offers-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100%;
+    width: 220px;
+    height: 250px;
+    padding: 35px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.offers-text h4 {
+    font-size: 13px ;
+}
+
+.offers-text p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.offers-card-image {
+    border-radius: 100%;
+    width: 50px;
+    border: 1px solid green;
+    z-index: 1;
+    margin-top: 100px;
 }
