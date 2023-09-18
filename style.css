@@ -842,3 +842,127 @@ img.nurse-lady{
     height: inherit;
     border-radius: 100%;
 }
+
+/* footer section */
+
+footer {
+    padding: 7% 10%;
+}
+
+.footer-container {
+    display: flex;
+    align-items: left;
+    gap: 50px;
+}
+
+.row1 .logo-and-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.row1 .logo-and-text img {
+    width: 50px;
+    height: 30px;
+}
+
+.row1 .description {
+    padding-top: 15px;
+    line-height: 25px;
+    color: #3D69B2;
+}
+
+.row1 .copyright {
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.row2 {
+    width: 100%;
+}
+
+.row2 .links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.row3 .address-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address-container .address-item {
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+    color: #000000;
+}
+
+.address-item i {
+    font-size: 22px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+
+.s-icon {
+    border-radius: 100%;
+    background-color: rgb(216, 212, 212);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.s-icon:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.s-icon i:hover {
+    color: white;
+}
+
+.s-icon i {
+    color: #FFB600;
+    font-size: 20px;
+}
+
+.select-group {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+select {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.select-group i {
+    font-size: 20px;
+}
