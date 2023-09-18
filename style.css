@@ -489,7 +489,82 @@ img.nurse-lady{
 .circle1{
     border-radius: 50px;
 }
-
+#newsletter{
+    background-image: url('assets/images/newsletter.png');
+    width: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* Increase the container height */
+    height: 600px; /* Adjust the height as needed */
+    width: 1550px;
+    position: relative;
+    margin-top: 200px;
+}
+.newsletter-card{
+    position: absolute;
+    width: 550px;
+    height: 100px;
+    margin-top: 360px;
+    margin-left: 450px;
+    height: 330px;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 1; /* Bring the shape to the front */
+    box-shadow: 1px 0px 1px 1px #9C9A9A;
+    border: 0px solid #BFBFBF;
+}
+.newsletter-card h3{
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    font-size: 25px;
+    font-family: 'Lato';
+}
+.newsletter-card small{
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 95px;
+    left: 80px;
+    font-size: 14px;
+    font-family: 'Lato';
+    color: grey;
+}
+.newsletter-card input{
+    justify-content: center;
+    position: absolute;
+    width: 80%;
+    height: 30px;
+    top: 160px;
+    left: 60px;
+    font-size: 15px;
+    font-family: 'Lato';
+    border: 0px solid #ccc; /* Border color */
+}
+    input[type="Email"]{
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 10px; /* Add space between placeholders */
+    border: 1px solid #ccc; /* Border color */
+    background-color: transparent; /* Background color */
+    border-radius: 10px;
+    }
+.newsletter-card button{
+    border: 2px #29B9E7;
+    border-radius: 5px;
+    position: absolute;
+    top: 230px;
+    left: 160px;
+    width: 45%;
+    height: 40px;
+    background-color: #29B9E7;
+    color: white;
+    font-size: 16px;
+    font-family: 'Lato';
+    box-shadow: 1px 0px 1px 1px #9C9A9A;
+}
 
 /* Statistics Section */
 
