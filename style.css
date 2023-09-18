@@ -618,15 +618,17 @@ img.nurse-lady{
 
 /* Grades Section */
 
+/* Since the Grades section is Similar to the testimonials, same classes apply */
 
-#grades {
+
+#grades, #testimonials {
     position: relative;
     background-color: #FFB6007D;
     padding: 7% 10%;
     height: 500px;
 }
 
-#grades h1 {
+#grades h1, #testimonials h1 {
     text-align: center;
     margin-top: -40px;
 }
@@ -640,14 +642,14 @@ img.nurse-lady{
 }
 
 
-.carousel-container {
+.carousel-container, .testim-carousel-container {
     position: relative;
     margin-top: 30px;
     height: 400px;
 }
 
 
-.grade-arrows {
+.grade-arrows, .testim-grade-arrows {
     position: absolute;
     background-color: white;
     width: 55px;
@@ -661,11 +663,11 @@ img.nurse-lady{
     z-index: 1;
 }
 
-.grade-right {
+.grade-right, .testim-grade-right {
     right: 0;
 }
 
-.grade-arrows:hover {
+.grade-arrows:hover, .testim-grade-arrows:hover {
     background-color: #ffffff86;
     cursor: pointer;
 }
@@ -704,7 +706,7 @@ img.nurse-lady{
 }
 
 .step-card {
-    padding: 30px;
+    padding: 25px;
     border-radius: 100%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -722,13 +724,14 @@ img.nurse-lady{
     flex-direction: column;
     align-items: center;
     width: 200px;
-    height: 220px;
-    padding: 25px;
+    height: 200px;
+    padding: 20px;
     text-align: center;
 }
 
 .step-text h4 {
     font-size: 20px;
+    margin-top: -25px;
     margin-bottom: 10px;
 }
 
@@ -742,7 +745,7 @@ img.nurse-lady{
     border-radius: 100%;
     width: 50px;
     height: 50px;
-    margin-top: -55px;
+    margin-top: -50px;
     margin-left: 74px;
     display: flex;
     justify-content: center;
@@ -752,4 +755,90 @@ img.nurse-lady{
 .step-card-image i {
     font-size: 27px;
     color: inherit;
+}
+
+
+/* Testimonials section */
+
+#testimonials {
+    background-color: #909ECD;
+}
+
+.testim-card-controller {
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.testim-grade-arrows {
+    margin-top: 100px !important;
+}
+
+.testim-grade-right {
+    margin-right: -100px;
+}
+
+.testim-grade-left {
+    margin-left: -100px;
+}
+
+.testim-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.testim-quote-icon {
+    position: absolute;
+    padding: 20px;
+    background-color: #FFB600;
+    transform: rotate(45deg);
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: -50px;
+    margin-left: 25px;
+}
+
+.testim-quote-icon i {
+    font-size: 20px;
+    color: white;
+    transform: rotate(-45deg) scale(1.42);
+}
+
+.testim-text {
+    padding: 30px;
+    line-height: 25px;
+}
+
+.testim-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testim-user p {
+    color: grey;
+    font-size: 13px;
+}
+
+.testim-rating {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-c {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.img-c img {
+    width: inherit;
+    height: inherit;
+    border-radius: 100%;
 }
